@@ -13,10 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Throw in our provisioning script
-  # config.vm.provision "shell", path: "bootstrap.sh", privileged: false
+  #config.vm.provision "shell", path: "bootstrap.sh", privileged: false
 
-  # Map localhost:4000 to port 4000 inside the VM
-  config.vm.network "forwarded_port", guest: 4000, host: 4000
+  config.vm.network "forwarded_port", guest: 4000, host: 40000
   config.vm.network "private_network", ip: "192.168.3.33"
 
   config.ssh.forward_agent = true

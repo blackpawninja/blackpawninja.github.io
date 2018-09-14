@@ -1,3 +1,7 @@
+#!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+
 echo "gem: --no-document" > ~/.gemrc
 
 sudo apt-add-repository ppa:brightbox/ruby-ng --yes

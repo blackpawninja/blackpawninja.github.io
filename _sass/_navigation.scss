@@ -1,35 +1,24 @@
 @import "variable";
 
-.hamburger-button {
-  @media screen and (min-width: $screen-tablet-min) {
-    display: none;
-  }
-
-  @media screen and (max-width: $screen-phone-landscape-max) {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    font-size: 20px;
-  }
-}
-
 .main-nav {
   ul {
     list-style-type: none;
+    padding-left: 10px;
+    text-align: right;
   }
 
   a {
-    color: white;
     text-decoration: none;
     font-size: 25px;
   }
 
   @media screen and (min-width: $screen-tablet-min) {
-    float: right;
-    margin-right: 25px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
 
     a:hover {
-      font-size: 30px;
+      //font-size: 28px;
     }
   }
 

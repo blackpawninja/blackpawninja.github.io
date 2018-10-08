@@ -15,6 +15,9 @@
   @media screen and (min-width: 1000px) {
     margin: 0;
     background: #343434 url(/img/tree-moon.jpg) top left no-repeat;
-    min-height: 800px;
+    
+    .content {
+      margin-top: 700px;
+    }
   }
 }
